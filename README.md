@@ -27,3 +27,12 @@ Repositorio destinado a almacenar las prácticas, tareas y ejercicios de la carr
   * Algoritmos de detección de colisiones e inversión de vectores en un plano bidimensional.
   * Optimización de animaciones mediante `requestAnimationFrame` combinada con ciclos de actualización por intervalos (`setTimeout`).
 * [🔗 Ver la pelota rebotar en vivo](https://mkowoj.github.io/Practicas-Universidad/Efecto-Rebote-Canvas/)
+
+## 5. Renderizado masivo y Algoritmos de Aleatoriedad: Paleta de Colores (Canvas) 
+* **Carpeta:** `Generador-Mosaico-Canvas`
+* **Descripción:** Un script que genera dinámicamente un lienzo artístico compuesto por 150 elementos circulares renderizados en un único lote, calculando propiedades visuales asíncronas dentro de rangos controlados.
+* **Conceptos aplicados:**
+  * Implementación de una función optimizada para la generación de números enteros aleatorios acotados por un rango mínimo y máximo ($[min, max]$).
+  * Manipulación y selección de datos indexados mediante arreglos de color estáticos en CSS.
+  * Renderizado repetitivo eficiente utilizando estructuras de control iterativas (`for`).
+* [🔗 Ver mosaico aleatorio en vivo](https://mkowoj.github.io/Practicas-Universidad/Generador-Mosaico-Canvas/)
