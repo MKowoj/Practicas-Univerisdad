@@ -11,3 +11,13 @@ Repositorio destinado a almacenar las prácticas, tareas y ejercicios de la carr
   * Métodos de arreglos (`.shift()` para eliminar al inicio, `.pop()` para eliminar al final, modificación por índice).
   * Ciclos e iteraciones (`for` y `while`) para recorrer espacios de almacenamiento.
   * Funciones de búsqueda y condicionales para interactuar con entradas del usuario (`prompt` y `alert`). [🔗 Probar simulador en vivo](https://mkowoj.github.io/Practicas-Universidad/Logica-JS-Estacionamiento/)
+
+4. ## 3. Gráficos interactivos y Física Básica: Efecto Rebote (Canvas)
+* **Carpeta:** `Efecto-Rebote-Canvas`
+* **Descripción:** Un experimento visual interactivo que renderiza una esfera en movimiento constante y calcula colisiones elásticas contra los bordes de un lienzo dinámico.
+* **Conceptos aplicados:**
+  * Uso de la API de HTML5 Canvas (`getContext('2d')`, `arc`, `clearRect`).
+  * Simulación de vectores de velocidad y dirección aleatoria mediante `Math.random()`.
+  * Algoritmos de detección de colisiones e inversión de vectores en un plano bidimensional.
+  * Optimización de animaciones mediante `requestAnimationFrame` combinada con ciclos de actualización por intervalos (`setTimeout`).
+* [🔗 Ver la pelota rebotar en vivo](https://mkowoj.github.io/Practicas-Universidad/Efecto-Rebote-Canvas/)
