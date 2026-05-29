@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Círculo en Canvas</title>
+    <style>
+    #canvas{
+        border: 3px solid navy;
+        background: tomato;
+    }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width = "500" height = "500"></canvas>
+
+    <script>
+        var lienzo = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        //Coordenadas XY
+        var coordenadaX = 250;
+        var coordenadaY = lienzo.height/2;
+        var radio = 100;
+
+        //Color de relleno y linea
+        ctx.fillStyle="tomato";
+        ctx.strokeStyle="navy";
+
+        //Define actualización
+        var actualiza = requestAnimationFrame(animarCirculo);
+        var anguloInicial = 0
+        //variable angulo
+        var angulo = 0;
+
+        function animarCirculo(){
+            //incremento del angulo
+            angulo = angulo+0.1;
+            //llamo a la funcion dibujarCirculo con los valores
+            dibujarCirculo(coordenadaX, coordenadaY, radio,anguloInicial,angulo);
+            //actualizo la pantalla para el efecto de animacion
+            actualiza = requestAnimationFrame(animarCirculo);
+        }
+
+        function dibujarCirculo(coordenadaX, coordenadaY, radio,anguloInicial,angulo){
+            //Llamemos a nuestra funcion para "refrescar" la pantalla
+            limpiarCanvas();
+            ctx.beginPath();
+            ctx.lineWidth = 20;
+            //ctx.arc(x, y, radio, angulo inicial, angulo final, contrario a las manecillas)
+            ctx.arc(coordenadaX, coordenadaY, radio,anguloInicial,angulo,false);
+            ctx.stroke();
+        }
+
+        function limpiarCanvas(){
+            //Usamos clearRect() y le pasamos las coordenadas del rectangulo que queremos limpiar
+            ctx.clearRect(0, 0, lienzo.width, lienzo.height);
+        }
+        
+        dibujarCirculo();
+
+        
+       setInterval("location.reload()",4000);
+
+    </script>
+</body>
+</html>

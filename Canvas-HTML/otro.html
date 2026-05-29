@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas" width = "500" height = "500"></canvas>
+
+    <script>
+        var lienzo = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+
+        //ctx.arc(x, y, radio, angulo inicial, angulo final, contrario a las manecillas)
+        ctx.fillStyle="tomato";
+        ctx.strokeStyle="navy";
+
+        for (var i = 0; i <= 2; i=i+0.1) {
+            ctx.beginPath();
+            ctx.lineWidth = 5;
+            ctx.arc(250,250,100,0, Math.PI * i, false);
+            ctx.stroke();
+             ctx.fill();
+            }
+    </script>
+</body>
+</html>
