@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paleta de colores</title>
+    <style>
+    #canvas-animado{
+        border: 4px solid red;
+      }
+    </style>
+</head>
+<body>
+    <canvas id="canvas-animado" width="1200" height="550"></canvas>
+
+    <script>
+    var lienzo = document.getElementById('canvas-animado');
+    var ctx = lienzo.getContext('2d');
+    const circulo = []; //array vacío para crear x cantidad de círculos
+
+    //arreglo que contiene los colores solicitados
+    var colores = ['aqua', 'black', 'blue', 'fuchsia', 'gray', 'green', 'lime', 'maroon', 'navy', 'olive', 'orange', 'purple', 'red', 'silver', 'teal', 'white', 'yellow'];
+    
+    //Generador de numeros aleatorios
+    const generadorNumeroAleatorio = (min,max) => {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+    };
+
+    //Ciclo for que recrea 150 circulos con posiciones x,y y radio aleatorios en rangos definidos
+    for(let i = 1; i <=150; i++){
+        const posicionX = generadorNumeroAleatorio(10,1200);
+        const posicionY = generadorNumeroAleatorio(10,550);
+        const radio = generadorNumeroAleatorio(1,30);
+        //para acceder al color se crea un valor aleatorio entre 0 y 17.
+        const color = generadorNumeroAleatorio(0,16);
+        ctx.fillStyle = colores[color];
+        ctx.beginPath();
+        //se crea un circulo con valores aleatorios
+        circulo[i] = ctx.arc(posicionX, posicionY, radio, 0, 2 * Math.PI);
+        ctx.fill();
+        //se imprime el circulo por i veces, tamaño 150.
+        document.getElementById('canvas-animado').innerHTML = circulo[i];
+    }
+    </script>
+</body>
+</html>
