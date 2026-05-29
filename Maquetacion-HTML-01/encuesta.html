@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de satisfaccion</title>
+</head>
+<body>
+    <br>
+    <a href="inicio.html">Volver al inicio</a>
+    <br>
+    <h1>Ayúdanos a mejorar</h1>
+
+    <p>Tu opinión es muy importante para nosotros.</p>
+
+    <!--Se envia al servidor la respuesta del cliente para obtener indicadores-->
+    <form action="MyServidor.com" method="get">
+        <fieldset>
+            <legend>El proceso de facturación fue:</legend> 
+            
+            <!--Se coloca por default la selección en excelente. Solo una opcion es valida seleccionar-->
+            <input type="radio" id="malo" name="calificacion" value="opc1">
+            <label for="malo">Malo</label>
+    
+            <input type="radio" id="bueno" name="calificacion" value="opc2">
+            <label for="bueno">Bueno</label>
+    
+            <input type="radio" id="excelente" name="calificacion" value="opc3" checked>
+            <label for="excelente">Excelente</label>
+        </fieldset>
+                    
+        <button type="submit">Enviar</button> <!--Envia a la empresa la retroalimentación-->
+    </form>
+</body>
+</html>

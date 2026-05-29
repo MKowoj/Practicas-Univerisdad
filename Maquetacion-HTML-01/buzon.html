@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda</title>
+</head>
+<body>
+    <br>
+    <a href="inicio.html">Volver al inicio</a>
+    <br>
+    <h3>Error de facturación</h3>
+
+    <form action="Myserver.com" method="POST">
+
+        <fieldset>
+
+            <legend>Solo clientes que hayan facturado su consumo</legend>
+             <!--Solicita al usuario su correo-->
+            <label for="correo">Correo</label>
+            <br>
+            <input type="email" id="correo" name="correo">
+            <br><br>
+
+            <!--Solicita al usuario su contraseña.-->
+            <label for="contraseña">contraseña</label>
+            <br>
+            <input type="password" id="contraseña" name="usuario_contraseña" placeholder="8 digitos">
+            <br><br>
+
+            <!--Ingresa usuario su comentario-->
+            <label for="comentario">Comentario</label>
+            <br>
+            <textarea id="comentario" name="comentario"></textarea>
+            <br>
+            <button type="submit">Verificar</button>   
+
+            <!--Envia al servidor la fecha en que se envió la queja. El usuario no lo ve-->
+            <input type="hidden" id="fecha" name="fecha" value="20240809">
+            <br><br>    
+            <a href="facturacion.html">Hacer mi factura</a> <!--dirige a página de facturación-->
+        </fieldset>
+
+        <!--Le permite al usuario subir una captura de pantalla del error presentado,. Tipo file de imagen-->
+        <fieldset>
+            <legend>Captura del error</legend>
+            <label for="evidencia">Suba una imagen</label>
+            <input type="file" id="evidencia" name="evidencia_cliente" accept="image/png,imag/jpeg">
+            <br><br>
+            <button type="submit">Enviar</button> <!--Envía a la empresa la captura del error-->
+        </fieldset>
+    </form>
+</body>
+</html>

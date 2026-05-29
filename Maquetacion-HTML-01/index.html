@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- Siempre inicia con doctype en su version HTML 5 -->
+<html lang="Es"> <!--indica que es un documento en HTML, lang es para lenguaje-->
+<head> <!--head indica informacion general de la pagina, son los metadatosL-->
+    <meta charset="UTF-8"> <!--con esta etiqueta declaro el tipo de codificacion-->
+    <title>Mi primera página web</title> 
+</head>
+<body> <!--en esta seccion se mostrará el contenido de la página al usuario.-->
+    <a href="inicio.html">Volver al inicio</a>
+
+    <h1>HTML</h1>
+    <h2>Introducción</h2>
+
+    <p> <!--inicia el párrafo-->
+        Para este trabajo consulté la hoja de etiquetas disponible de la versión 5 en la página de HTML.
+        <a target="_blank" href="https://html.com/wp-content/uploads/html-cheat-sheet.pdf">documentacion html</a>.
+        Y me apoyé del siguiente sitio: <a target="_blank" href="https://lenguajehtml.com/">Clic para ver sitio</a>
+        <br><br>
+        HTML5 es un lenguaje de marcado donde se hace uso de etiquetas y atributos
+        para dar estructura al texto. En caso de necesitar modificar color o estilo
+        se debe aplicar mediante CSS.
+        <br><br>
+        Las etiquetas en html tienen la siguiente estructura: &lt;nombre&gt; contenido &lt;/nombre&gt;. En la parte donde 
+        va la diagonal invertida indica el fin de la etiqueta. Por ejemplo, el párrafo que estamos escribiendo se
+        encuentra en una etiqueta de párrafo cuyo código se ve de la siguiente manera: 
+        &lt;p&gt;texto, texto, texto&lt;/p&gt;. Para hacer un salto de linea la etiqueta es &lt;br&gt;. 
+        <br><br>
+        Para mostrar la estructura de un documento html haremos uso de una lista. Utilizaremos la no ordenada
+        &lt;ul&gt;nombre de la lista&lt;/ul&gt; y para cada dato listado debe colocarse dentro de las etiquetas 
+        &lt;li&gt;Nombre del elemento&lt;/li&gt;:
+    </p>
+    <ul> <!--Introducimos la siguiente lista desordenada-->
+        <li>
+            &lt;!DOCTYPE html&gt;: 
+            <p>Es obligatorio iniciar un documento con esta declaración en HTML5.</p>
+        </li>
+        <li>
+            &lt;html&gt;Documento html&lt;/html&gt;: 
+            <p>Se coloca al inicio y al final para indicar que se trata de un documento html.</p>
+        </li>
+        <li>
+            &lt;head&gt;metadatos&lt;/head&gt;:
+            <p>
+                Proporciona información general de la página y sirve para colocar etiquetas de metadatos; 
+                como el título de la página web. En este ejercicio nuestro título es: "Titulo mostrado en la pestaña".
+            </p>
+        </li>
+        <li>
+            &lt;body&gt;Párrafo&lt;/body&gt;: 
+            <p>
+                Es el cuerpo del documento html y dentro de esta se pueden insertar titulos o subtitulos, asi como párrafos o listas. 
+            </p>
+            
+        </li>
+    </ul>
+    <p>
+        Lo anteriormente dicho queda mejor explicado con la siguiente imagen:
+        <br>
+        <img 
+            src="https://ney.one/wp-content/uploads/2019/08/Estructura-de-una-documento-HTML.png" 
+            width="300"
+            alt="Error al cargar imagen"
+            title="Estructura de un documento HTML">
+        <br><br>
+    </p>
+    <p>
+        Ahora mostraremos una lista ordenada la cual utiliza el siguiente código: &lt;ol&gt;Lista&lt;/ol&gt;. Y para aumentar el reto
+        colocoraremos dentro una lista no ordenada. Por ejemplo, un itinerario:
+    </p>
+    <ol start="1"> <!--Inicia lista ordenada que empieza en 1-->
+        <li>Desayunar</li>
+        <li>Hacer listado de compras
+            <ul>
+                <li>Tomate</li>
+                <li>Lechuga</li>
+                <li>Queso</li>
+            </ul>
+        </li>
+        <li>Trabajar</li>
+        <li>Dormir</li>
+    </ol>
+    <p dir="rtl">Gracias por visitar mi primera página web</p>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturacion</title>
+</head>
+<body>
+    <br>
+    <a href="inicio.html">Volver al inicio</a>
+    <br>
+    <h1>Facturacion</h1>
+
+    <p>Para facturar ten a la mano tu ticket e ingresa los siguientes datos:</p>
+
+    <form action="/El-Temido-SAT.com.mx" method="get">
+        <fieldset>
+            <legend>Datos de la empresa</legend>
+            <label for="rfc">RFC</label>
+            <br>
+            <input type="text" id="rfc" name="rfc" placeholder="PBI121109D21">
+            <br><br>
+
+            <label for="razonSocial">Razón Social</label>
+            <br>
+            <input type="text" id="razonSocial" name="razonSocial" placeholder="TECH PECH">
+            <br><br>
+
+            <label for="codigoPostal">Dirección fiscal</label>
+            <br>
+            <input type="number" id="codigoPostal" name="codigoPostal" placeholder="65419">
+            <br><br>
+
+            <label for="calle">Calle</label>
+            <br>
+            <input type="text" id="calle" name="calle" placeholder="Moctezuma">
+            <br><br>
+
+            <label for="numeroCalle">Numero Exterior</label>
+            <br>
+            <input type="number" id="numeroCalle" name="numeroCalle" placeholder="113">
+            <br><br>
+
+            <label for="ciudad">Ciudad</label>
+            <br>
+            <input type="text" id="ciudad" name="ciudad" placeholder="Cancún">
+            <br><br>
+
+            <label for="estado">Estado</label>
+            <br>
+            <input type="text" id="estado" name="estado" placeholder="Quintana Roo">
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos del ticket</legend>
+           
+            <label for="codigoFacturacion">Codigo de facturacion</label>
+            <br>
+            <input type="number" id="codigoFacturacion" name="codigo" placeholder="1048204932304344">
+            <br><br>
+
+            <label for="sucursal">Numero de sucursal</label>
+            <br>
+            <input type="number" id="sucursal" name="numero" placeholder="00978">
+            <br><br>
+
+            <label for="caja">Numero de caja</label>
+            <br>
+            <input type="number" id="caja" name="numero" placeholder="03">
+            <br><br>
+
+            <label for="fecha">Fecha de compra</label>
+            <br>
+            <input type="date" id="fecha" name="fecha">
+            <br><br>
+
+            <label for="uso">Uso de CFDI</label>
+            <br>
+            <input type="text" id="uso" name="uso" placeholder="Gastos en general">
+            <br><br>
+
+            <label for="regimen">Regimen fiscal</label>
+            <br>
+            <input type="text" id="regimen" name="regimen" placeholder="Personas morales">
+            <br><br>
+
+            <label for="correo">Enviar al correo:</label>
+            <br>
+            <input type="email" id="correo" name="correo" placeholder="micorreo@gmail.com">
+            <br><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Confirmación de datos</legend>
+            <input type="checkbox" id="cbox1" value="1er_checkbox">
+            <label for="cbox1">Marca la casilla para confirmar que tus datos son correctos</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Aviso de privacidad</legend>
+            <input type="checkbox" id="cbox2" value="2do_checkbox">
+            <label for="cbox2">Marca la casilla para aceptar el aviso de privacidad</label>
+        </fieldset>
+        <fieldset>
+            <button type="submit">Facturar</button> 
+        </fieldset>
+    </form>
+
+</body>
+</html>
