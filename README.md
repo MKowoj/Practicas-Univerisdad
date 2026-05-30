@@ -37,9 +37,10 @@ Repositorio destinado a almacenar las prácticas, tareas y ejercicios de la carr
   * Renderizado repetitivo eficiente utilizando estructuras de control iterativas (`for`).
 * [🔗 Ver mosaico aleatorio en vivo](https://mkowoj.github.io/Practicas-Universidad/Generador-Mosaico-Canvas/)
 
-* ## 6. Sitio web usando HTML y CSS para poner en práctica la arquitectura de la información
+* ## 6. Sitio web responsivo usando HTML y CSS para poner en práctica la arquitectura de la información
 * **Carpeta:** `sitio-promocion-turismo`
 * **Descripción:** El sitio muestra la estructura de un sitio web para promocionar un lugar turístico. Contiene información básica como historia, contacto y secciones basado en las necesidades del cliente.
 * **Conceptos aplicados:**
   * Arquitectura de la información.
+  * Buenas prácticas de responsividad
 * [🔗 Ver sitio web en vivo](https://mkowoj.github.io/Practicas-Universidad/sitio-promocion-turismo/)
