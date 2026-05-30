@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opiniones de Clientes</title>
+</head>
+<body style="background-color: rgba(159, 184, 125, 0.767);">
+    <form>
+        <fieldset>
+            <legend>Menú del sitio</legend>
+                <a href="index.html">Inicio</a>
+                <a href="historia.html">Historia de Bacalar</a>
+                <a href="lugares.html">Descripción de actividades</a>
+                <a href="reservaciones.html">Reservar un viaje</a>
+                <a href="adicional.html">Amigo mochilero</a>
+        </fieldset>
+    </form>
+    <br>
+
+    <form action="Myserver.com" method="POST">
+
+        <fieldset>
+
+            <legend>Opiniones</legend>
+             <!--Solicita al usuario su nombre-->
+
+             <label for="nombre">Nombre</label>
+            <br>
+            <input type="text" id="nombre" name="nombre">
+            <br><br>
+
+            <label for="email">Correo</label>
+            <br>
+            <input type="email" id="email" name="email">
+            <br><br>
+
+            <!--Ingresa usuario su comentario-->
+            <label for="comentario">Comentario</label>
+            <br>
+            <textarea id="comentario" name="comentario"></textarea>
+            <br>
+            <button type="submit">Enviar comentarios</button>
+
+            <!--Fecha envio de comentario-->
+            <input type="hidden" id="fecha" name="fecha" value="20240809">
+            <br><br>    
+        </fieldset>
+    </form>
+    <hr>
+
+    <h3>Comentarios de nuestros clientes</h3>
+    <fieldset>
+        <legend>Karla</legend>
+        <img src="usuario.png" width="80" alt="foto del usuario">
+        <p>
+            La página gestiona todo de maravilla. No tuve que preocuparme por perder un viaje. En todo momento
+            se me mandó notificación de mis horarios y el acompañamiento fue increible.
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>Juan:</legend>
+        <img src="usuario.png" width="80" alt="foto del usuario">
+        <P>
+            Bacalar es inolvidable. Volvería de nuevo.
+        </P>
+    </fieldset>
+    <fieldset>
+        <legend>Sebastián</legend>
+        <img src="usuario.png" width="80" alt="foto del usuario">
+        <P>
+            Es increible este lugar, sin duda volvería a ir nuevamente. Ya estoy planeando
+            mi próximo viaje el año que viene.
+        </P>
+    </fieldset>
+
+    <p>Autor: Manuel Cohuo</p>
+    <a href="mailto:kowoj@outlook.com">Envíame un correo</a>
+</body>
+</html>
