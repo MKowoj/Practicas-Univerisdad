@@ -37,11 +37,17 @@ Repositorio destinado a almacenar las prácticas, tareas y ejercicios de la carr
   * Renderizado repetitivo eficiente utilizando estructuras de control iterativas (`for`).
 * [🔗 Ver mosaico aleatorio en vivo](https://mkowoj.github.io/Practicas-Universidad/Generador-Mosaico-Canvas/)
 
-* ## 6. Sitio web responsivo usando HTML y CSS para poner en práctica la arquitectura de la información
+* ## 6. Sitio web responsivo para promover Bacalar, Quintana Roo
 * **Carpeta:** `sitio-promocion-turismo`
-* **Descripción:** El sitio muestra la estructura de un sitio web para promocionar un lugar turístico. Contiene información básica como historia, contacto y secciones basado en las necesidades del cliente.
+* **Descripción:** El sitio muestra la estructura de un sitio web para promocionar un lugar turístico. Contiene información básica como historia, contacto y secciones basado en las necesidades del cliente. Usa HTML y CSS siguiendo un diseño basado en la arquitectura de información y responsividad.
 * **Conceptos aplicados:**
   * Arquitectura de la información.
   * Buenas prácticas de responsividad
 * [🔗 Ver sitio web en vivo](https://mkowoj.github.io/Practicas-Universidad/sitio-promocion-turismo/)
-  
+
+* ## 7. Reloj
+* **Carpeta:** `Reloj`
+* **Descripción:** Integrando el desarrollo de HTML, CSS y javascript para mostrar la hora actual.
+* **Conceptos aplicados:**
+  * Integración de JS, HTML y CSS
+* [🔗 Ver sitio web en vivo](https://mkowoj.github.io/Practicas-Universidad/Reloj/)
