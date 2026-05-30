@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj</title>
+    <style>
+    body{
+        background-color: rgb(228, 215, 115);
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 70px;
+        letter-spacing: 12px;
+        margin: 0;
+        padding: 0;
+        font-family: Tahoma;
+    }
+    </style>
+</head>
+<body>
+
+    <p>Hora actual</p>
+
+    <p id="miReloj"></p>
+
+    <!--Script que contiene la función del reloj-->
+    <script>
+        //Crea función del reloj digital
+        function relojDigital(){
+        //declaro variables y obtengo sus valores para el tiempo actual
+        let date = new Date();
+        let horas = date.getHours(); 
+        let minutos = date.getMinutes(); 
+        let segundos = date.getSeconds();
+        let horario = "am"; 
+        
+        //formato de 12 horas
+        if (horas == 0){
+            horas = 12;
+        }
+        if (horas > 12){
+            horas = horas - 12;
+            horario = "pm";
+        }
+
+        //muestra valor de 2 digitos para cada dato
+        horas = (horas < 10) ? "0" + horas:horas;
+        minutos = (minutos < 10) ? "0" + minutos:minutos;
+        segundos = (segundos < 10) ? "0" + segundos:segundos;
+
+        //declara variable mostrarReloj en el formato a mostrar
+        var mostrarReloj = horas + ":" + minutos + ":" + segundos + " " + horario;
+        //muestra en el documento el reloj
+        document.getElementById("miReloj").innerHTML = mostrarReloj;
+        }
+        //funcion para actualizar el reloj cada segundo
+        setInterval(relojDigital,1000)
+        //se llama a la función
+        relojDigital();
+    </script>
+</body>
+</html>
