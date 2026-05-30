@@ -1,0 +1,247 @@
+
+@media screen and (min-width:501px) {
+    
+/*Estilo de color para todo el cuerpo*/
+body{
+    background-color:rgba(202, 241, 232, 0.882);
+}
+
+/*Estilo para todos los titulos h1*/
+h1{
+    font-family:Tahoma;
+    font-size: 40px; 
+    text-align:center; 
+    background-color:tomato;
+    color: rgb(58, 52, 44);
+}
+
+p{
+    font-family: Georgia;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: left;
+}
+
+.formulario{
+    text-align: center;
+}
+
+/*Colores para las opciones de tabla 1*/
+#color1Tabla{
+    background-color: rgb(246, 235, 172);
+}
+#color2Tabla{
+    background-color: rgb(245, 138, 138);
+}
+#color3Tabla{
+    background-color: rgb(162, 201, 202);
+}
+#color4Tabla{
+    background-color: rgb(182, 227, 182);
+}
+#color5Tabla{
+    background-color: rgb(231, 177, 231);
+}
+
+.parte1{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 20px;
+    line-height: 180%;
+    text-align: center;
+}
+
+.parte1 h2{
+    font-size:4vw;
+    color: blue;
+    text-align: center;
+}
+
+.parte1 img{
+    text-align: center;
+}
+
+.parte2{
+    font-family: Impact;
+    font-size: 30vw;
+    line-height: 200%;
+    text-align: left;
+}
+
+.parte2 h2{
+    font-size: 3vw;
+    color: rgb(43, 8, 77);
+}
+
+.parte2 img{
+    text-align: center;
+}
+
+#tituloUno{
+    font-size: 5vw;
+    color: brown;
+    text-align: center;
+}
+
+#texto1{
+    color: brown;
+}
+
+.grid-container {
+  display: grid;
+  margin: 10px;
+  font-stretch: condensed;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  text-align: center;
+  font-size: 2vw;
+}
+
+.imagenes{
+    text-align: center;
+}
+
+img{
+    max-width: 65%;
+    height: auto;
+
+}
+
+/*Estilo para el menú principalr*/
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+nav li {
+    float: right;
+}
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+nav li a:hover {
+    background-color: #64bcd4;
+}
+footer{
+    background-color: rgb(75, 188, 158);
+    margin: 0%;
+    text-align: right;
+    color: rgb(71, 0, 0);
+    font-size: 12px;
+}
+
+/*Estilo 1 para clase tipo cliente*/
+.idCliente{
+    background-color: rgb(160, 217, 236);
+    text-align: center;
+    margin: 5px;
+}
+
+.idCliente p{
+    text-align: center;
+}
+
+/*Estilo 2 para clase tipo servicio*/
+.servicio{
+    background-color: rgb(182, 213, 231);
+    text-align: center;
+    margin: 5px;
+}
+
+/*Contenedor responsivo*/
+.container{
+    display: flex;
+    background-color: rgb(146, 201, 229);
+    justify-content: center;
+    text-align: center;
+    font-stretch: condensed;
+
+}
+
+.container h3{
+    font-size: 18px;
+}
+
+.container p{
+    font-size: 12px;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    font-size: 8vw;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#box1{
+    background-color: rgb(186, 243, 167);
+}
+
+#box2{
+    background-color: rgb(160, 199, 101);
+
+}
+
+.vuelo{
+    background-color: rgb(182, 213, 231);
+    text-align: center;
+    margin: 5px;
+}
+
+.vuelo p {
+    text-align: center;
+}
+
+.pagoLiga{
+    background-color: rgb(182, 213, 231);
+    font-family: "Tahoma";
+    font-size: 20px;
+    color: rgb(62, 51, 51);
+    text-align: center;
+}
+
+.container table{
+    color:rgb(34, 34, 7);
+    font-size: 14px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.container thead{
+    background-color: rgb(210, 114, 30);
+}
+
+.container th{
+    padding: 20px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.container td{
+    padding: 15px;
+    border-bottom: solid 1px rgb(160, 199, 101);
+}
+
+.container tbody tr{
+    cursor: pointer;
+}
+
+.container tbody tr:hover{
+    background-color: rgb(108, 186, 203);
+}
+
+#fondo{
+    background-color:rgba(202, 241, 232, 0.882);
+}
+
+a:hover{
+    background-color: yellow;
+    color: red;
+}   
+}
+
