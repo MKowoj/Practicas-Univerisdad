@@ -42,4 +42,4 @@ Repositorio destinado a almacenar las prácticas, tareas y ejercicios de la carr
 * **Descripción:** El sitio muestra la estructura de un sitio web para promocionar un lugar turístico. Contiene información básica como historia, contacto y secciones basado en las necesidades del cliente.
 * **Conceptos aplicados:**
   * Arquitectura de la información.
-* [🔗 Ver mosaico aleatorio en vivo](https://mkowoj.github.io/Practicas-Universidad/sitio-promocion-turismo/)
+* [🔗 Ver sitio web en vivo](https://mkowoj.github.io/Practicas-Universidad/sitio-promocion-turismo/)
