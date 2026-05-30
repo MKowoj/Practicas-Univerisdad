@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar viaje</title>
+
+    <style>
+        table, th, td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(171, 174, 197);">
+    <form style="color: blueviolet;">
+        <fieldset>
+            <legend>Menú del sitio</legend>
+                <a href="index.html">Inicio</a>
+                <a href="historia.html">Historia de Bacalar</a>
+                <a href="lugares.html">Descripción de actividades</a>
+                <a href="opiniones.html">Opiniones</a>
+                <a href="adicional.html">Amigo mochilero</a>
+        </fieldset>
+    </form>
+    <br>
+
+    <form action="/reservesuviajeabacalar.com.mx" method="get">
+        <!--El primer campo el cliente debe llenar los datos de identificación-->
+        <fieldset>
+            <legend>Identificación</legend>
+            <label for="nombre">Nombre Completo</label>
+            <br>
+            <input type="text" id="nombre" name="nombre">
+            <br><br>
+            <label for="correo">Correo</label>
+            <br>
+            <input type="email" id="correo" name="correo">
+            <br><br>
+            <label for="telefono">Teléfono</label>
+            <br>
+            <input type="number" id="telefono" name="telefono">
+            <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Selección de Servicio</legend>
+            <table style="width: 300px">
+                <tr>
+                    <th>Clase</th>
+                    <th>Precio</th>
+                    <th>Incluye</th>
+                </tr>
+                <tr>
+                    <td>Junior</td>
+                    <td>$1000</td>
+                    <td>Kayak, snorkel y paseo en lancha</td>
+                </tr>
+                <tr>
+                    <td>Plata</td>
+                    <td>$2000 por noche</td>
+                    <td>Añade alimentación</td>
+                </tr>
+                <tr>
+                    <td>Gold</td>
+                    <td>$6000 por 3 noches</td>
+                    <td>Añade transportación total</td>
+                </tr>    
+                <tr>
+                    <td>Premium</td>
+                    <td>$15000 por 5 noches</td>
+                    <td>Añade hospedaje y lavandería</td>
+                </tr>     
+            </table>
+            <br><br>
+            
+            <select>
+                <option>Juior</option>
+                <option>Plata</option>
+                <option>Gold</option>
+                <option>Premium</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Detalle de solicitud</legend>
+
+            <label for="ciudadOrigen">Ciudad de origen</label>
+            <br>
+            <input type="text" id="ciudadOrigen" name="ciudadOrigen" placeholder="Tijuana">
+            <br><br>
+
+            <label for="ciudadDestino">Ciudad destino</label>
+            <br>
+            <input type="text" id="ciudadDestino" name="ciudadDestino" placeholder="Bacalar">
+            <br><br>
+
+            <label for="fechaInicio">Fecha entrada</label>
+            <br>
+            <input type="date" id="fechaInicio" name="fechaInicio">
+            <br><br>
+
+            <label for="fechaEntrada">Fecha salida</label>
+            <br>
+            <input type="date" id="fechaEntrada" name="fechaEntrada">
+            <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Vuelo</legend>
+
+            <input type="checkbox" id="cbox1" value="1er_checkbox">
+            <label for="cbox1">Quiero que reserven mi vuelo</label>
+
+            <p>Seleccione la aerolinea de su preferencia</p>
+
+            <select>
+                <option>El más económico.</option>
+                <option>Aeromexico</option>
+                <option>Volaris</option>
+                <option>VivaAerobus</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Hospedaje</legend>
+
+            <input type="checkbox" id="cbox2" value="2do_checkbox">
+            <label for="cbox2">Quiero que reserven mi hospedaje</label>
+
+            <p>Seleccione el lugar de su preferencia</p>
+
+            <select>
+                <option>El más económico.</option>
+                <option>Vista a la laguna</option>
+                <option>Céntrico</option>
+                <option>Cerca de la central de autobuses</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <a href="pago.html">Reservar</a> 
+        </fieldset>
+    </form>
+        
+    <p>Autor: Manuel Cohuo</p>
+    <a href="mailto:kowoj@outlook.com">Envíame un correo</a>
+</body>
+</html>
