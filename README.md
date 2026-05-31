@@ -53,7 +53,13 @@ Repositorio destinado a almacenar las prácticas, tareas y ejercicios de la carr
 * [🔗 Ver sitio web en vivo](https://mkowoj.github.io/Practicas-Universidad/Reloj/)
 
 * ## 7. Cuento
-* **Carpeta:** `Reloj`
+* **Carpeta:** `Cuento`
 * **Descripción:** Creación de un sitio web para visualizar un cuento realizado con procreate y usando imágenes como botones de avanzar. 
 * [🔗 Ver sitio web en vivo](https://mkowoj.github.io/Practicas-Universidad/Cuento/)
+
+* ## 8. Pagina con web responsive
+* **Carpeta:** `responsivo-ejercicio`
+* **Descripción:** Creación de un sitio web para visualizar un cuento realizado con procreate y usando imágenes como botones de avanzar. 
+* [🔗 Ver sitio web en vivo](https://mkowoj.github.io/Practicas-Universidad/responsivo-ejercicio/)
+  
   
